@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#basket{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: white;
+    background-color: black;
+    z-index: 0;
+    cursor: pointer;
+}
+#hidden-basket{
+    opacity: 0;
+    background-color: blue;
+    color: white;
+    width: 270px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border: 1px solid black;
+}
+#basket:hover #hidden-basket{
+     opacity: 1;
+     z-index: 10;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 20px;
+}
+.card img{
+    max-width: 100%; 
+}
+.card button{
+    width: 170px;
+    height: 50px;
+}
+.cartImage{
+    width: 40px;
+    height: 40px;
+}
+#deleting{
+    margin-left: 7px;
+    background-color: black;
+    color: white;
+}
+.wishlist-items{
+    display: flex;
+    flex-direction: row;
+}
